@@ -1,0 +1,5 @@
+package com.restauranteonline.http;
+
+public class RestauranteController {
+
+}

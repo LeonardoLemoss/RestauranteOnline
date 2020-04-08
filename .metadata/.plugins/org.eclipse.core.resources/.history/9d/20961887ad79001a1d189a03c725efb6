@@ -1,0 +1,23 @@
+package com.restauranteonline.http;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.restauranteonline.http.dto.response.RestauranteResponse;
+
+@RestController
+@RequestMapping("/restautante")
+public interface RestauranteController {
+	
+	@RequestMapping
+	public RestauranteResponse pesquisaRestaurante(RestauranteResponse restaurante);
+	
+	
+	@RequestMapping(value = "/tipo/{tipo}", method = RequestMethod.GET)
+	public ResponseEntity<RestauranteResponse> pesquisaRestaurantePeloTipo(String tipoRestaurante);
+	
+	
+	
+}

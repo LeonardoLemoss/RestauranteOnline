@@ -1,0 +1,16 @@
+package com.restauranteonline.http;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.restauranteonline.http.dto.response.RestauranteResponse;
+
+@RestController
+@RequestMapping("/restautante")
+public interface RestauranteController {
+	
+	@RequestMapping
+	public RestauranteResponse pesquisaRestaurante(RestauranteResponse restaurante);
+	
+
+}
