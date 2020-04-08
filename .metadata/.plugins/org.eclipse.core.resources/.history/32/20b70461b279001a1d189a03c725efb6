@@ -1,0 +1,15 @@
+package com.restauranteonline.http.converter;
+
+import java.util.List;
+
+import com.restauranteonline.http.dto.response.RestauranteResponse;
+import com.restauranteonline.usecase.dto.response.RestauranteOutput;
+
+public class RestauranteConverter {
+
+	public List<RestauranteResponse> ParaCamadaController(List<RestauranteOutput> restaurantes) {
+		
+		return null;
+	}
+
+}

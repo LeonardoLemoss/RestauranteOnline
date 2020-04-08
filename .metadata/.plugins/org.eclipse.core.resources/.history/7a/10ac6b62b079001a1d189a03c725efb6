@@ -1,0 +1,35 @@
+package com.restauranteonline.http.impl;
+
+import java.util.List;
+
+import com.restauranteonline.http.RestauranteController;
+import com.restauranteonline.http.dto.response.PedidoResponse;
+import com.restauranteonline.http.dto.response.RestauranteResponse;
+
+public class RestauranteControllerImpl implements RestauranteController {
+
+	@Override
+	public List<RestauranteResponse> listaRestaurantes() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<RestauranteResponse> pesquisaRestaurantePeloTipo(String tipo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<RestauranteResponse> pesquisaRestaurantePelaLocalidade(String sigla) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public PedidoResponse encaminhaPedido(PedidoResponse pedido) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

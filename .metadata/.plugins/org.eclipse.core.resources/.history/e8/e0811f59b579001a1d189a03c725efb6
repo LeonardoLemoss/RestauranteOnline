@@ -1,0 +1,5 @@
+package com.restauranteonline.entity;
+
+public class RestauranteEntity {
+
+}

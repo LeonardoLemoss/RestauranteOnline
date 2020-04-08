@@ -1,0 +1,43 @@
+package com.restauranteonline.http.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.restauranteonline.http.RestauranteController;
+import com.restauranteonline.http.dto.response.PedidoResponse;
+import com.restauranteonline.http.dto.response.RestauranteResponse;
+import com.restauranteonline.usecase.RestauranteUseCase;
+import com.restauranteonline.usecase.dto.response.RestauranteOutput;
+
+public class RestauranteControllerImpl implements RestauranteController {
+
+	@Autowired
+	private RestauranteUseCase usecase;
+	
+	
+	@Override
+	public List<RestauranteResponse> listaRestaurantes() {
+		
+		List<RestauranteOutput> restaurantes = 
+				usecase.buscaRestaurantes();
+		
+		return null;
+	}
+
+	@Override
+	public List<RestauranteResponse> pesquisaRestaurantePeloTipo(String tipo) {
+		return null;
+	}
+
+	@Override
+	public List<RestauranteResponse> pesquisaRestaurantePelaLocalidade(String sigla) {
+		return null;
+	}
+
+	@Override
+	public PedidoResponse encaminhaPedido(PedidoResponse pedido) {
+		return null;
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.restauranteonline.usecase;
+
+import java.util.List;
+
+import com.restauranteonline.usecase.dto.response.RestauranteOutput;
+
+public class RestauranteUseCase {
+
+	public List<RestauranteOutput> buscaRestaurantes() {
+		return null;
+	}
+
+}

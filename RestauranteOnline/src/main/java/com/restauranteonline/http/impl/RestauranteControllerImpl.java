@@ -1,5 +1,47 @@
 package com.restauranteonline.http.impl;
 
-public class RestauranteControllerImpl {
+import java.util.List;
+
+import com.restauranteonline.http.RestauranteController;
+import com.restauranteonline.http.converter.RestauranteConverter;
+import com.restauranteonline.http.dto.response.PedidoResponse;
+import com.restauranteonline.http.dto.response.RestauranteResponse;
+import com.restauranteonline.usecase.RestauranteUseCase;
+import com.restauranteonline.usecase.dto.response.RestauranteOutput;
+
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+public class RestauranteControllerImpl implements RestauranteController {
+
+	private final RestauranteUseCase usecase;
+	private final RestauranteConverter converter;
+	
+	@Override
+	public List<RestauranteResponse> listaRestaurantes() {
+		
+		List<RestauranteOutput> restaurantes = 
+				usecase.buscaRestaurantes();
+		
+		List<RestauranteResponse> listaRestaurantesController =
+				converter.ParaCamadaController(restaurantes);
+				
+		return listaRestaurantesController;
+	}
+
+	@Override
+	public List<RestauranteResponse> pesquisaRestaurantePeloTipo(String tipo) {
+		return null;
+	}
+
+	@Override
+	public List<RestauranteResponse> pesquisaRestaurantePelaLocalidade(String sigla) {
+		return null;
+	}
+
+	@Override
+	public PedidoResponse encaminhaPedido(PedidoResponse pedido) {
+		return null;
+	}
 
 }

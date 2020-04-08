@@ -1,0 +1,5 @@
+package com.restauranteonline.gateway.repository;
+
+public interface RestauranteRepository  extends JpaRepository<RestauranteRepository, Long>{
+
+}

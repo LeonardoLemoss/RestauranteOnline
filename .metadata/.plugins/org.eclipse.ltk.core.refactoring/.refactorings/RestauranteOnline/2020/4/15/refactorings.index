@@ -1,2 +1,9 @@
 1586358431094	Rename type 'testeDtoResponse'
 1586358883646	Rename type 'localicaoResponse'
+1586360800120	Rename type 'exemploRequest'
+1586360849029	Rename type 'exemploRequest'
+1586360862668	Rename type 'exemploResponse'
+1586361073241	Copy compilation units
+1586361076865	Delete element
+1586361087643	Rename type 'PedidoResponse'
+1586361099499	Rename type 'RestauranteResponse'

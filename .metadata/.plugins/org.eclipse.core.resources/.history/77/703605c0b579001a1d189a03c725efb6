@@ -1,0 +1,11 @@
+package com.restauranteonline.entity;
+
+import com.restauranteonline.utils.TipoRestauranteEnum;
+
+public class RestauranteEntity {
+	
+	private String nome;
+	private TipoRestauranteEnum tipo;
+	private String localidade;
+
+}
